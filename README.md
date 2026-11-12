@@ -1,13 +1,50 @@
-CRUD com Vue.js e Laravel
+# CRUD de Usuários — Vue.js + Laravel + MySQL
 
-Este projeto é um CRUD simples de usuários feito com Vue.js no frontend e Laravel no backend. Ele permite cadastrar, listar, editar e excluir usuários. Os dados não ficam gravados em banco de dados, e sim na memória usando sessão do Laravel, atendendo ao requisito de “banco de dados em memória”.
+Projeto de gerenciamento de usuários desenvolvido com Vue.js no frontend, Laravel no backend e MySQL como banco de dados.
 
-O frontend foi desenvolvido em Vue.js, com um formulário para inserir nome, email, telefone e senha, além de uma lista que mostra todos os usuários cadastrados. Também é possível editar um usuário, carregar os dados dele no formulário e salvar as alterações, ou excluir um usuário da lista.
+## Funcionalidades
 
-O backend foi feito com Laravel, criando rotas específicas na API para listar, criar, atualizar e deletar usuários. O Vue.js se comunica com o Laravel usando Axios, enviando e recebendo dados em JSON. Cada alteração na interface reflete imediatamente no backend.
+- Cadastrar usuários.
+- Listar usuários.
+- Editar usuários.
+- Excluir usuários.
 
-Também foi criado um planejamento no Azure DevOps com as tarefas básicas do projeto, incluindo criação do ambiente, desenvolvimento do frontend, desenvolvimento do backend, integração dos dois lados, documentação e vídeo de apresentação.
+## Tecnologias utilizadas
 
-O projeto atende ao objetivo do desafio, funcionando de forma local com comunicação entre Vue.js e Laravel, CRUD completo e documentação simples.
+- Vue.js
+- Laravel
+- PHP
+- MySQL
+- Axios
+- JavaScript
 
-Autor: Breno Ninin
+## Como executar o projeto
+
+### Backend
+
+Entre na pasta `backend`:
+
+```bash
+composer install
+```
+
+Configure o arquivo `.env` com os dados de conexão do MySQL e execute:
+
+```bash
+php artisan key:generate
+php artisan migrate
+php artisan serve
+```
+
+### Frontend
+
+Entre na pasta `frontend`:
+
+```bash
+npm install
+npm run dev
+```
+
+## Autor
+
+Breno Ninin
